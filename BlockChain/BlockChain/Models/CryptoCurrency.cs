@@ -45,6 +45,7 @@ namespace BlockChain.Models
         {
             _nodes.Add(new Node { Address = new Uri(address) });
         }
+
         private Block CreateNewBlock(int proof, string previousHash = null)
         {
             var block = new Block
